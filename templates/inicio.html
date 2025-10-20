@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+<div class="text-center text-white">
+    <h1 class="display-3 mb-4 fw-bold text-danger">Navegador Flask</h1>
+    
+    <div class="my-5">
+        <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=800" 
+             alt="Imagen de bienvenida" 
+             class="img-fluid rounded shadow-lg" 
+             style="max-width: 600px; border: 3px solid #dc3545;">
+    </div>
+    
+    <p class="lead fs-4 mb-4">Bienvenido al navegador de Flask de Yurem 🔥</p>
+    
+    <div class="mt-4">
+        <a href="{{ url_for('animales') }}" class="btn btn-danger btn-lg mx-2">Ver Animales</a>
+        <a href="{{ url_for('vehiculos') }}" class="btn btn-outline-danger btn-lg mx-2">Ver Vehículos</a>
+    </div>
+</div>
+{% endblock %}

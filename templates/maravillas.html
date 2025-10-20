@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+
+{% block title %}Maravillas del Mundo{% endblock %}
+
+{% block content %}
+<div class="text-center">
+  <h2 class="fw-bold text-dark mb-4">Las 7 Maravillas del Mundo Moderno</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+
+    <div class="col">
+      <div class="card h-100 shadow">
+        <div class="card-body">
+          <h5 class="card-title">Chichén Itzá (México)</h5>
+          <p class="card-text">Centro ceremonial maya con arquitectura astronómica impresionante.</p>
+        </div>
+        <video class="w-100" controls>
+          <source src="{{ url_for('static', filename='videos/chichen_itza.mp4') }}" type="video/mp4">
+          Tu navegador no soporta video HTML5.
+        </video>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100 shadow">
+        <div class="card-body">
+          <h5 class="card-title">Cristo Redentor (Brasil)</h5>
+          <p class="card-text">Estatua de 30 metros que domina Río de Janeiro desde el Corcovado.</p>
+        </div>
+        <video class="w-100" controls>
+          <source src="{{ url_for('static', filename='videos/cristo_redentor.mp4') }}" type="video/mp4">
+          Tu navegador no soporta video HTML5.
+        </video>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100 shadow">
+        <div class="card-body">
+          <h5 class="card-title">Machu Picchu (Perú)</h5>
+          <p class="card-text">Ciudad inca escondida en los Andes, rodeada de misterio y belleza.</p>
+        </div>
+        <video class="w-100" controls>
+          <source src="{{ url_for('static', filename='videos/machu_picchu.mp4') }}" type="video/mp4">
+          Tu navegador no soporta video HTML5.
+        </video>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100 shadow">
+        <div class="card-body">
+          <h5 class="card-title">Coliseo Romano (Italia)</h5>
+          <p class="card-text">Anfiteatro épico que acogió gladiadores y espectáculos masivos.</p>
+        </div>
+        <video class="w-100" controls>
+          <source src="{{ url_for('static', filename='videos/coliseo_romano.mp4') }}" type="video/mp4">
+          Tu navegador no soporta video HTML5.
+        </video>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100 shadow">
+        <div class="card-body">
+          <h5 class="card-title">Taj Mahal (India)</h5>
+          <p class="card-text">Mausoleo de mármol blanco construido por amor eterno.</p>
+        </div>
+        <video class="w-100" controls>
+          <source src="{{ url_for('static', filename='videos/taj_mahal.mp4') }}" type="video/mp4">
+          Tu navegador no soporta video HTML5.
+        </video>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100 shadow">
+        <div class="card-body">
+          <h5 class="card-title">Gran Muralla China</h5>
+          <p class="card-text">Fortificación milenaria que se extiende por más de 21,000 km.</p>
+        </div>
+        <video class="w-100" controls>
+          <source src="{{ url_for('static', filename='videos/gran_muralla.mp4') }}" type="video/mp4">
+          Tu navegador no soporta video HTML5.
+        </video>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100 shadow">
+        <div class="card-body">
+          <h5 class="card-title">Petra (Jordania)</h5>
+          <p class="card-text">Ciudad tallada en piedra, famosa por su Tesoro y arquitectura nabatea.</p>
+        </div>
+        <video class="w-100" controls>
+          <source src="{{ url_for('static', filename='videos/petra.mp4') }}" type="video/mp4">
+          Tu navegador no soporta video HTML5.
+        </video>
+      </div>
+    </div>
+
+  </div>
+</div>
+{% endblock %}
